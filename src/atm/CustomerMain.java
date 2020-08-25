@@ -20,6 +20,7 @@ public class CustomerMain {
         atm.transfer(2,200);
         System.out.println(  peter  );
         System.out.println(  nancy  );
+        System.out.println(  bank  );
 
         //Customer c1 = bank.findCustomer(1);
         //Customer c80 = bank.findCustomer(80);
