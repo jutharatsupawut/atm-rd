@@ -9,7 +9,7 @@ public class Customer {
     private String pin;
 
     // 1.2 composition : "ไปเชื่อมโยงกับ class อื่น "Has-A" relationship
-
+    //                                     ระหว่างคลาส
 
     private BackAccount account;
 
@@ -18,6 +18,14 @@ public class Customer {
         this.name = name;
         this.pin = pin;
         this.account = new BackAccount(id,name,"Saving");
+    }
+
+    public boolean checkPin(String pin){
+        if (this.pin.equals(pin))
+            return true;
+        else
+            return  false;
+        // เท่ากับ return this.pin.equals(pin);
     }
 
     public int getId() {
